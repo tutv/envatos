@@ -1,5 +1,5 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "Envatos",
   "version": "0.0.1",
   "manifest_version": 2,
   "description": "This extension was created with the awesome extensionizr.com",
@@ -18,7 +18,7 @@
   },
   "options_page": "src/options_custom/index.html",
   "page_action": {
-    "default_icon": "icons/icon19.png",
+    "default_icon": "icons/icon128.png",
     "default_title": "page action demo",
     "default_popup": "src/page_action/page_action.html"
   },
@@ -28,7 +28,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.google.com/*"
+        "*://*/*"
       ],
       "css": [
         "src/inject/inject.css"
@@ -36,7 +36,7 @@
     },
     {
       "matches": [
-        "https://www.google.com/*"
+        "*://*/*"
       ],
       "js": [
         "src/inject/inject.js"
